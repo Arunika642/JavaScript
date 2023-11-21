@@ -1,0 +1,333 @@
+Question-1 :   Input the distance in Kilometer and Convert into Meter and Centimeter.
+function distance(){
+  var distancInKm = prompt("Enter the distance in Kilometer");
+  var distancInM = distancInKm * 1000;
+  var distancInCm = distancInKm * 100000;
+  console.log("The distance in Meter is " + distancInM + " m");
+  console.log("The distance in Centimeter is " + distancInCm + " cm");
+}
+distance();
+
+
+
+Question-2:    WAP to input radius of a circle and log the area of circle.
+
+function area() {
+  var radius = parseFloat(prompt("Enter the radius of the circle:"));
+  var areaOfCircle = Math.PI * Math.pow(radius, 2);
+  console.log("The area of the circle is: " + areaOfCircle);
+}
+area();
+
+
+
+
+
+Question-3:    WAP to input two numbers and perform arithmetic operations on those numbers.
+function numbers(){
+  var x;
+  var y;
+  x = parseFloat(prompt("Enter the first number:"));
+  y = parseFloat(prompt("Enter the second number:"));
+  console.log("The sum of the two numbers is: " + (x+y));
+}
+numbers();
+
+Question-4:    WAP to calculate total marks in two subject and then calculate percentage.
+function marks(){
+  var english = parseFloat(prompt('Enter the marks in English:'));
+  var maths = parseFloat(prompt('Enter the marks in Maths:'));
+  var totalMarks = english + maths;
+  var percentage = (totalMarks/200)*100;
+  console.log(percentage);
+}
+marks();
+
+
+
+
+
+
+Question-5:    WAP to input the length and breath of rectangle and calculate the area and parimeter of rectangle.
+function rectangle(){
+  var length = parseFloat(prompt('Enter the length:'));
+  var breadth = parseFloat(prompt('Enter the breadth:'));
+  var area = length * breadth;
+  var perimeter = 2 * (length + breadth);
+  console.log(area);
+  console.log(perimeter);
+}
+rectangle();
+
+
+
+
+Question-6:    WAP to input n numbers and log the average of those number.
+function average(){
+  var n = parseInt(prompt("Enter the number of numbers:"));
+  var sum = 0;
+  for (var i = 0; i < n; i++) {
+    var num = parseFloat(prompt("Enter number " + (i+1) + ":"));
+    sum += num;
+  }
+  var average = sum / n;
+  console.log("The average of the numbers is: " + average);
+}
+average();
+
+
+
+
+
+Question-7:    WAP to input the distance between two cities (in km) , convert and print this distance in meter, feet, inches, and centimeter.
+function distance(){
+  var km = parseFloat(prompt("Enter the distance between two cities (in km):"));
+  var meter = km * 1000;
+  var feet = km * 3280.84;
+  var inches = km * 39370.1;
+  var cm = km * 100000;
+  console.log("The distance in meter is: " + meter);
+  console.log("The distance in feet is: " + feet);
+  console.log("The distance in inches is: " + inches);
+}
+distance();
+
+
+
+
+Question-8:    WAP to input the temperature in Fahrenheit and convert this temperature in Centigrade.
+function temperature(){
+  var tempInFarenheit = parseFloat(prompt("Enter the temperature in farenheit"));
+  var tempInCentigrade = (tempInFarenheit - 32) * 5/9;
+  console.log("The temperature in Centigrade is" +tempInCentigrade);
+}
+temperature();
+
+
+
+
+Question-9:    Input the quantity and rate of a product then calculate the amount. A discount of 10 % after then calculate discount amount and amount after discount.
+function discount(){
+  var quantity = parseInt(prompt("Enter the quantity of the product:"));
+  var rate = parseFloat(prompt("Enter the rate of the product:"));
+  var amount = quantity * rate;
+  var discountAmount = amount * 0.1;
+  var finalAmount = amount - discountAmount;
+  console.log("The amount is: " + amount);
+  console.log("The discount amount is: " + discountAmount);
+  console.log("The final amount is: " + finalAmount);
+
+
+
+
+
+Question-10:    Input principal amount, input rate of interest, input number of years, Then Calculate simple interest.
+function simpleInterest(){
+  var principal = parseFloat(prompt("Enter the principal amount"));
+  var rate = parseFloat(prompt("Enter the rate of interest"));
+  var time = parseFloat(prompt("Enter the time"));
+  var si = (principal * rate * time)/100;
+  console.log(si);
+  
+}
+simpleInterest();
+
+
+conditional statements"
+
+Question-1 :   WAP that checks if a variable x is greater than 10. If it is, log "x is greater than 10," otherwise, log "x is not greater than 10."
+
+function num(){
+  let x = parseFloat(prompt("Enter the number"));
+  if(x> 10)
+  {
+    console.log(+x+ " is greater than 10");
+  }
+  else
+  {
+    console.log(+x+ " is not greater than 10");
+  }
+}
+num();
+
+
+
+Question-2 :   WAP that check that if an user is illegible for drive a car or not ( take user age as input).
+function user(){
+  let age = parseFloat(prompt("Enter the age"));
+  if(age> 18)
+  {
+    console.log("Eligible");
+  }
+  else
+  {
+    console.log("not eligible");
+  }
+}
+user();
+
+
+Question-3:    WAP to assign grade for a student For example, if the score is between 90 and 100, assign the grade "A.", (take score of every subject as input).
+
+function grades(){
+  let grade = parseFloat(prompt("Enter the grade"));
+  if(grade >= 90 && grade <= 80)
+  {
+    console.log("A grade");
+  }
+  else if(grade >=80 && grade <= 70)
+  {
+    console.log("B grade");
+  }
+  else if(grade >=70 && grade<=60)
+  {
+    console.log( "C grade");
+  }
+  else{
+    console.log("D grade");
+  }
+}
+grades();
+
+
+// Question-4:   WAP to check  time of day based on the current hour. For example, if it's before noon, log "Good morning.". (take time as an input).
+
+const time = 12;
+
+if (time >= 0 && time < 12) console.log("Good Morning");
+else if (time >= 12 && time < 16) console.log("Good Afternoon");
+else if (time >= 16 && time < 20) console.log("Good Evening");
+else if (time >= 20 && time <= 24) console.log("Good Night");
+else console.log("Invalid Time");
+
+// Question-5:   WAP using Switch-case to display day name according to number, for eg: 1 => Sunday. (take a number as input).
+
+function days(){
+  let day= parseFloat(prompt("Enter the day"));
+  switch(day)
+    {
+    case 1:
+      console.log("Sunday");
+      break;
+    case 2:
+      console.log("Monday");
+      break;
+    case 3:
+        console.log("Tuesday");
+        break;
+    case 4:
+        console.log("Wednesday");
+        break;
+      case 5:
+        console.log("Thursday");
+        break;
+      case 6:
+        console.log("Friday");
+      case 7:
+        console.log("Saturday");
+        break;
+      default:
+        console.log("Invalid day");
+    }
+}
+days();
+
+
+// Question-6:   WAP using Switch-case to display month name according to number, for eg: 1 => January. (take a number as input).
+
+function months(){
+  let month= parseFloat(prompt("Enter the month"));
+  switch (month) {
+      case 1:
+          console.log("January");
+          break;
+      case 2:
+          console.log("Feburary");
+          break;
+      case 3:
+          console.log("March");
+          break;
+      case 4:
+          console.log("April");
+          break;
+      case 5:
+          console.log("May");
+          break;
+      case 6:
+          console.log("June");
+          break;
+      case 7:
+          console.log("July");
+          break;
+      case 8:
+          console.log("August");
+          break;
+      case 9:
+          console.log("September");
+          break;
+      case 10:
+          console.log("October");
+          break;
+      case 11:
+          console.log("November");
+          break;
+      case 12:
+          console.log("December");
+          break;
+      default:
+          console.log("Invalid Month");
+          break;
+  }
+}
+months();
+
+
+// Question-7:   Implement a switch case statement to determine the type of fruit based on a variable. Handle at least three different fruit options.
+
+function fruits(){
+  const fruit = "Apple";
+
+  switch (fruit) {
+      case "Apple":
+          console.log("Apple");
+          break;
+      case "Mango":
+          console.log("Mango");
+          break;
+      case "Orange":
+          console.log("Orange");
+          break;
+      default:
+          console.log("Invalid Fruit");
+          break;
+  }
+}
+fruits();
+
+// Question-8:   WAP to categorize a given temperature into "low," "medium," or "high" ranges.
+
+const temperature = 100;
+
+if (temperature >= 0 && temperature < 30) console.log("Low");
+else if (temperature >= 30 && temperature < 60) console.log("Medium");
+else if (temperature >= 60 && temperature <= 100) console.log("High");
+else console.log("Invalid Temperature");
+
+// Question-9:   WAP that classifies a number as positive, negative, even, or odd.
+
+const number = 10;
+
+if (number > 0) console.log("Positive");
+else if (number < 0) console.log("Negative");
+else if (number % 2 == 0) console.log("Even");
+else if (number % 2 != 0) console.log("Odd");
+else console.log("Invalid Number");
+
+
+// Question-10:  WAP to validate a username. If the username is less than 6 characters, log "Username too short"; if it's more than 15 characters, log "Username too long"; otherwise, log "Username accepted."
+
+const username = "abc";
+
+if (username.length < 6) console.log("Username too short");
+else if (username.length > 15) console.log("Username too long");
+else console.log("Username accepted");
