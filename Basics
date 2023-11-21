@@ -1,0 +1,133 @@
+Question-1 :   Input the distance in Kilometer and Convert into Meter and Centimeter.
+function distance(){
+  var distancInKm = prompt("Enter the distance in Kilometer");
+  var distancInM = distancInKm * 1000;
+  var distancInCm = distancInKm * 100000;
+  console.log("The distance in Meter is " + distancInM + " m");
+  console.log("The distance in Centimeter is " + distancInCm + " cm");
+}
+distance();
+
+
+
+Question-2:    WAP to input radius of a circle and log the area of circle.
+
+function area() {
+  var radius = parseFloat(prompt("Enter the radius of the circle:"));
+  var areaOfCircle = Math.PI * Math.pow(radius, 2);
+  console.log("The area of the circle is: " + areaOfCircle);
+}
+area();
+
+
+
+
+
+Question-3:    WAP to input two numbers and perform arithmetic operations on those numbers.
+function numbers(){
+  var x;
+  var y;
+  x = parseFloat(prompt("Enter the first number:"));
+  y = parseFloat(prompt("Enter the second number:"));
+  console.log("The sum of the two numbers is: " + (x+y));
+}
+numbers();
+
+Question-4:    WAP to calculate total marks in two subject and then calculate percentage.
+function marks(){
+  var english = parseFloat(prompt('Enter the marks in English:'));
+  var maths = parseFloat(prompt('Enter the marks in Maths:'));
+  var totalMarks = english + maths;
+  var percentage = (totalMarks/200)*100;
+  console.log(percentage);
+}
+marks();
+
+
+
+
+
+
+Question-5:    WAP to input the length and breath of rectangle and calculate the area and parimeter of rectangle.
+function rectangle(){
+  var length = parseFloat(prompt('Enter the length:'));
+  var breadth = parseFloat(prompt('Enter the breadth:'));
+  var area = length * breadth;
+  var perimeter = 2 * (length + breadth);
+  console.log(area);
+  console.log(perimeter);
+}
+rectangle();
+
+
+
+
+Question-6:    WAP to input n numbers and log the average of those number.
+function average(){
+  var n = parseInt(prompt("Enter the number of numbers:"));
+  var sum = 0;
+  for (var i = 0; i < n; i++) {
+    var num = parseFloat(prompt("Enter number " + (i+1) + ":"));
+    sum += num;
+  }
+  var average = sum / n;
+  console.log("The average of the numbers is: " + average);
+}
+average();
+
+
+
+
+
+Question-7:    WAP to input the distance between two cities (in km) , convert and print this distance in meter, feet, inches, and centimeter.
+function distance(){
+  var km = parseFloat(prompt("Enter the distance between two cities (in km):"));
+  var meter = km * 1000;
+  var feet = km * 3280.84;
+  var inches = km * 39370.1;
+  var cm = km * 100000;
+  console.log("The distance in meter is: " + meter);
+  console.log("The distance in feet is: " + feet);
+  console.log("The distance in inches is: " + inches);
+}
+distance();
+
+
+
+
+Question-8:    WAP to input the temperature in Fahrenheit and convert this temperature in Centigrade.
+function temperature(){
+  var tempInFarenheit = parseFloat(prompt("Enter the temperature in farenheit"));
+  var tempInCentigrade = (tempInFarenheit - 32) * 5/9;
+  console.log("The temperature in Centigrade is" +tempInCentigrade);
+}
+temperature();
+
+
+
+
+Question-9:    Input the quantity and rate of a product then calculate the amount. A discount of 10 % after then calculate discount amount and amount after discount.
+function discount(){
+  var quantity = parseInt(prompt("Enter the quantity of the product:"));
+  var rate = parseFloat(prompt("Enter the rate of the product:"));
+  var amount = quantity * rate;
+  var discountAmount = amount * 0.1;
+  var finalAmount = amount - discountAmount;
+  console.log("The amount is: " + amount);
+  console.log("The discount amount is: " + discountAmount);
+  console.log("The final amount is: " + finalAmount);
+
+
+
+
+
+Question-10:    Input principal amount, input rate of interest, input number of years, Then Calculate simple interest.
+function simpleInterest(){
+  var principal = parseFloat(prompt("Enter the principal amount"));
+  var rate = parseFloat(prompt("Enter the rate of interest"));
+  var time = parseFloat(prompt("Enter the time"));
+  var si = (principal * rate * time)/100;
+  console.log(si);
+  
+}
+simpleInterest();
